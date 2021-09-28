@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="../dist/style.css">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+  <header></header>
+  <div class="wrapper">
+
+
+  <main class="container">
+    <section class="tracking">
+      <div class="tracking__usercard">
+        <div class="tracking__user">
+          <img src="images/image-jeremy.png" alt="" class="avatar">
+          <div class="tracking__info">
+            <p class="tracking__subtext">
+              Report for
+            </p> 
+            <h1 class="tracking__username">Jeremy Robson</h1> 
+          </div>
+        </div>
+        <div class="tracking__controllist">
+          <div class="tracking__item"><a href="#" class="tracking__link daily" id="daily">Daily</a></div>
+          <div class="tracking__item"><a href="#" class="tracking__link weekly tracking__link--active" id="weekly">Weekly</a></div>
+          <div class="tracking__item"><a href="#" class="tracking__link monthly" id="monthly">Monthly</a></div>
+        </div>
+      </div>
+      
+      <div class="report__card work">
+        <div class="report__inner">
+          <div class="report__header">
+            <div class="report__activity">Work</div>
+            <button class="report__btn"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="report__data daily">
+            <div class="report__current">5hrs <!-- daily --></div>
+            <div class="report__previous">Previous - 7hrs <!-- daily --></div>
+          </div>
+        </div>
+      </div>  
+
+      <div class="report__card play">
+        <div class="report__inner">
+          <div class="report__header">
+            <div class="report__activity">Play</div>
+            <button class="report__btn"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="report__data daily hide">
+            <div class="report__current">5hrs <!-- daily --></div>
+            <div class="report__previous">Previous - 7hrs <!-- daily --></div>
+          </div>
+          <div class="report__data weekly">
+            <div class="report__current">32hrs <!-- weekly --></div>
+            <div class="report__previous">Previous - 36hrs <!-- weekly --></div>
+          </div>
+          <div class="report__data monthly hide">
+            <div class="report__current">103hrs <!-- monthly --></div>
+            <div class="report__previous">Previous - 128hrs <!-- monthly --></div>
+          </div>
+        </div>
+      </div>  
+      <div class="report__card study">
+        <div class="report__inner">
+          <div class="report__header">
+            <div class="report__activity">Study</div>
+            <button class="report__btn"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="report__data daily hide">
+            <div class="report__current">5hrs <!-- daily --></div>
+            <div class="report__previous">Previous - 7hrs <!-- daily --></div>
+          </div>
+          <div class="report__data weekly">
+            <div class="report__current">32hrs <!-- weekly --></div>
+            <div class="report__previous">Previous - 36hrs <!-- weekly --></div>
+          </div>
+          <div class="report__data monthly hide">
+            <div class="report__current">103hrs <!-- monthly --></div>
+            <div class="report__previous">Previous - 128hrs <!-- monthly --></div>
+          </div>
+        </div>
+      </div>  
+      <div class="report__card exercise">
+        <div class="report__inner">
+          <div class="report__header">
+            <div class="report__activity">Exercise</div>
+            <button class="report__btn"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="report__data daily hide">
+            <div class="report__current">5hrs <!-- daily --></div>
+            <div class="report__previous">Previous - 7hrs <!-- daily --></div>
+          </div>
+          <div class="report__data weekly">
+            <div class="report__current">32hrs <!-- weekly --></div>
+            <div class="report__previous">Previous - 36hrs <!-- weekly --></div>
+          </div>
+          <div class="report__data monthly hide">
+            <div class="report__current">103hrs <!-- monthly --></div>
+            <div class="report__previous">Previous - 128hrs <!-- monthly --></div>
+          </div>
+        </div>
+      </div>  
+      <div class="report__card social">
+        <div class="report__inner">
+          <div class="report__header">
+            <div class="report__activity">Social</div>
+            <button class="report__btn"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="report__data daily hide">
+            <div class="report__current">5hrs <!-- daily --></div>
+            <div class="report__previous">Previous - 7hrs <!-- daily --></div>
+          </div>
+          <div class="report__data weekly">
+            <div class="report__current">32hrs <!-- weekly --></div>
+            <div class="report__previous">Previous - 36hrs <!-- weekly --></div>
+          </div>
+          <div class="report__data monthly hide">
+            <div class="report__current">103hrs <!-- monthly --></div>
+            <div class="report__previous">Previous - 128hrs <!-- monthly --></div>
+          </div>
+        </div>
+      </div> 
+      <div class="report__card self">
+        <div class="report__inner">
+          <div class="report__header">
+            <div class="report__activity">Self care</div>
+            <button class="report__btn"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="report__data daily hide">
+            <div class="report__current">5hrs <!-- daily --></div>
+            <div class="report__previous">Previous - 7hrs <!-- daily --></div>
+          </div>
+          <div class="report__data weekly">
+            <div class="report__current">32hrs <!-- weekly --></div>
+            <div class="report__previous">Previous - 36hrs <!-- weekly --></div>
+          </div>
+          <div class="report__data monthly hide">
+            <div class="report__current">103hrs <!-- monthly --></div>
+            <div class="report__previous">Previous - 128hrs <!-- monthly --></div>
+          </div>
+        </div>
+      </div> 
+    
+
+    
+      
+    </section>
+   
+  </main>
+</div>
+  <footer></footer>
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

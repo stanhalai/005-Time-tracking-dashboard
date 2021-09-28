@@ -1,0 +1,16 @@
+body {
+    background-color: $veryDarkBlue;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    color: $textColor;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 80px 0;
+}
+
+a {
+    color: $desaturatedBlue;
+}

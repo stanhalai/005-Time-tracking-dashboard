@@ -5,7 +5,7 @@
 
 .container {
     margin: 0 auto;
-    width: 375px;
+    min-width: 375px;
     padding: 0 24px;
 }
 
@@ -20,7 +20,7 @@
 .tracking {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(9 1fr);
+    grid-template-rows: repeat(7 1fr);
     grid-row-gap: 24px;
 
     &__usercard {
@@ -71,7 +71,6 @@
 
     &__link--active {
         color: $textColor;
-        pointer-events: none;
     }
 }
 
@@ -171,7 +170,7 @@
     background-repeat: no-repeat;
 }
 
-.self {
+.selfcare {
     background: url('../app/images/icon-self-care.svg');
     background-color: $softOrange;
     background-position: 93% -10px;
@@ -243,7 +242,8 @@
         padding: 34px;
     }
 
-    .tracking__item:not(:last-child) {
+    .tracking__link:not(:last-child) {
+        // display: inline-block;
         margin-bottom: 25px;
     }
 
